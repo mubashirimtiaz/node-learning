@@ -106,18 +106,18 @@ function getMeethiLassiPromise() {
   return meethiLassiPromise;
 }
 
-async function main4() {
-  try {
-    const paratha = await getAlluParathaPromise();
-    const lassi = await getMeethiLassiPromise();
-    console.log('paratha ', paratha);
-    console.log('lassi ', lassi);
-  } catch (error) {
-    console.log('error ', error);
-  }
-}
+// async function main4() {
+//   try {
+//     const paratha = await getAlluParathaPromise();
+//     const lassi = await getMeethiLassiPromise();
+//     console.log('paratha ', paratha);
+//     console.log('lassi ', lassi);
+//   } catch (error) {
+//     console.log('error ', error);
+//   }
+// }
 
-main4();
+// main4();
 
 function main5() {
   getAlluParathaPromise()
@@ -130,5 +130,7 @@ function main5() {
     })
     .catch((error) => {
       console.log('error ', error);
+      return 'test';
     });
 }
+main5();
