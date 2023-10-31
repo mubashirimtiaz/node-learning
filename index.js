@@ -119,3 +119,5 @@ const arr = [1, 2, 3, 4];
 // };
 
 // setTimeout(greet, 3000);
+
+console.log('END');
